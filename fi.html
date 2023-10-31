@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro de Ocorrências</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Registro de Ocorrências</h1>
+	<form action="registro.php" method="post">
+		<h2>Informações do Paciente</h2>
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome" required>
+		<label for="idade">Idade:</label>
+		<input type="number" id="idade" name="idade" required>
+		<label for="sexo">Sexo:</label>
+		<select id="sexo" name="sexo" required>
+			<option value="masculino">Masculino</option>
+			<option value="feminino">Feminino</option>
+			<option value="outro">Outro</option>
+		</select>
+		<label for="telefone">Telefone:</label>
+		<input type="tel" id="telefone" name="telefone" required>
+		<label for="cpf">CPF:</label>
+		<input type="text" id="cpf" name="cpf" required>
+
+		<h2>Histórico Médico</h2>
+		<label for="problemas_saude">Problemas de Saúde:</label>
+		<textarea id="problemas_saude" name="problemas_saude"></textarea>
+		<label for="medicamentos">Medicamentos:</label>
+		<textarea id="medicamentos" name="medicamentos"></textarea>
+		<label for="alergias">Alergias:</label>
+		<textarea id="alergias" name="alergias"></textarea>
+
+		<h2>Detalhes da Ocorrência</h2>
+		<label for="tipo_ocorrencia">Tipo de Ocorrência:</label>
+		<input type="text" id="tipo_ocorrencia" name="tipo_ocorrencia" required>
+		<label for="data_ocorrencia">Data da Ocorrência:</label>
+		<input type="date" id="data_ocorrencia" name="data_ocorrencia" required>
+		<label for="problemas_saude_relacionados">Problemas de Saúde Relacionados:</label>
+		<textarea id="problemas_saude_relacionados" name="problemas_saude_relacionados"></textarea>
+
+		<h2>Informações sobre a Gestação (se aplicável)</h2>
+		<label for="periodo_gestacao">Período de Gestação:</label>
+		<input type="text" id="periodo_gestacao" name="periodo_gestacao">
+		<label for="outros_detalhes_gestacao">Outros Detalhes:</label>
+		<textarea id="outros_detalhes_gestacao" name="outros_detalhes_gestacao"></textarea>
+
+		<h2>Detalhes do Bebê (se aplicável)</h2>
+		<label for="horario_nascimento">Horário de Nascimento:</label>
+		<input type="time" id="horario_nascimento" name="horario_nascimento">
+		<label for="sexo_bebe">Sexo do Bebê:</label>
+		<select id="sexo_bebe" name="sexo_bebe">
+			<option value="masculino">Masculino</option>
+			<option value="feminino">Feminino</option>
+			<option value="outro">Outro</option>
+		</select>
+
+		<h2>Detalhes do Acidente de Trânsito</h2>
+		<label for="condicao_veiculo">Condição do Veículo:</label>
+		<input type="text" id="condicao_veiculo" name="condicao_veiculo">
+		<label for="comportamento_paciente">Comportamento do Paciente:</label>
+		<textarea id="comportamento_paciente" name="comportamento_paciente"></textarea>
+
+		<h2>Informações Adicionais</h2>
+		<label for="informacoes_adicionais">Informações Adicionais:</label>
+		<textarea id="informacoes_adicionais" name="informacoes_adicionais"></textarea>
+
+		<h2>Avaliação Médica e Paciente</h2>
+		<label for="estado_mental">Estado Mental:</label>
+		<textarea id="estado_mental" name="estado_mental"></textarea>
+		<label for="pressao_arterial">Pressão Arterial:</label>
+		<input type="text" id="pressao_arterial" name="pressao_arterial">
+		<label for="pulso">Pulso:</label>
+		<input type="text" id="pulso" name="pulso">
+		<label for="respiracao">Respiração:</label>
+		<input type="text" id="respiracao" name="respiracao">
+		<label for="temperatura">Temperatura:</label>
+		<input type="text" id="temperatura" name="temperatura">
+		<label for="perfusao">Perfusão:</label>
+		<input type="text" id="perfusao" name="perfusao">
+
+		<h2>Procedimentos Médicos Realizados</h2>
+		<label for="procedimentos_medicos">Procedimentos Médicos:</label>
+		<textarea id="procedimentos_medicos" name="procedimentos_medicos"></textarea>
+
+		<h2>Materiais e Equipamentos Médicos Utilizados</h2>
+		<label for="materiais_equipamentos">Materiais e Equipamentos:</label>
+		<textarea id="materiais_equipamentos" name="materiais_equipamentos"></textarea>
+
+		<h2>Dados do Acidente de Trânsito</h2>
+		<label for="usuarios_envolvidos">Usuários Envolvidos:</label>
+		<input type="text" id="usuarios_envolvidos" name="usuarios_envolvidos">
+		<label for="numero_ocorrencia">Número da Ocorrência:</label>
+		<input type="text" id="numero_ocorrencia" name="numero_ocorrencia">
+		<label for="detalhes_despacho">Detalhes do Despacho:</label>
+		<textarea id="detalhes_despacho" name="detalhes_despacho"></textarea>
+		<label for="quilometragem_percorrida">Quilometragem Percorrida:</label>
+		<input type="text" id="quilometragem_percorrida" name="quilometragem_percorrida">
+
+		<h2>Informações Adicionais</h2>
+		<label for="informacoes_adicionais_2">Informações Adicionais:</label>
+		<textarea id="informacoes_adicionais_2" name="informacoes_adicionais_2"></textarea>
+
+		<input type="submit" value="Salvar">
+	</form>
+</body>
+</html>
